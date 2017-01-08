@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>网站首页</title>
+<meta charset="UTF-8">
+
+
+</head>
+<body>
+{include file="header.html"}
+<br/><br/>
+<table border="1" align="center" width="70%" bgcolor="#ee0" style="text-align:center;">
+	<tr>
+		<td>框架名称</td>
+		<td>作者</td>
+		<td>完成时间</td>
+		<td>联系方式</td>
+	</tr>
+	<tr>
+		<td>sunPlus</td>
+		<td>孙科艺</td>
+		<td>2016年12月</td>
+		<td>18520566729</td>
+	</tr>
+</table>
+<br/>
+
+<table border="1" align="center" width="70%" bgcolor="#ee0" style="text-align:center;">
+	<tr>
+		<td colspan="7">网页配置部分</td>
+	<tr>
+	<tr>
+		<td>默认控制器</td>
+		<td>默认方法</td>
+		<td>路由模式</td>
+		<td>后缀格式</td>
+		<td>根目录</td>
+		<td>项目路径</td>
+		<td>统一入口文件</td>
+	</tr>
+	
+	<tr>
+	<td>{$web.defaultController}</td>
+	<td>{$web.defaultAction}</td>
+	<td>{$web.urlModel}</td>
+	<td>{$web.urlSuffix}</td>
+	<td>{$web.root}</td>
+	<td>{$web.app}</td>
+	<td>{$web.indexFile}</td>
+	</tr>
+</table>
+<br/>
+<table border="1" align="center" width="70%" bgcolor="#ee0" style="text-align:center;">
+	<tr>
+		<td colspan="5">数据库配置信息</td>
+	</tr>
+	<tr>
+		<td>本地服务器</td>
+		<td>数据库用户</td>
+		<td>数据库密码</td>
+		<td>数据库名</td>
+		<td>默认字符集</td>
+	</tr>
+	<tr>
+		<td>{$db.host}</td>
+		<td>{$db.user}</td>
+		<td>{$db.password}</td>
+		<td>{$db.dbname}</td>
+		<td>{$db.charset}</td>
+	</tr>
+</table>
+<br/>
+<table border="1" align="center" width="70%" bgcolor="#ee0" style="text-align:center;">
+	<tr>
+		<td colspan="8">模板控制配置</td>
+	<tr>
+	<tr>
+		<td>默认模板路径</td>
+		<td>默认编译路径</td>
+		<td>默认配置路径</td>
+		<td>默认缓存路径</td>
+		<td>缓存保存时间</td>
+		<td>是否开启缓存</td>
+		<td>左定界符</td>
+		<td>右定界符</td>
+	</tr>
+	<tr>
+	<td>{$smt.templateDir}</td>
+	<td>{$smt.compileDir}</td>
+	<td>{$smt.configDir}</td>
+	<td>{$smt.cacheDir}</td>
+	<td>{$smt.cacheLifeTime}</td>
+	<td>{$smt.caching}</td>
+	<td>{$smt.leftDelimiter}</td>
+	<td>{$smt.rightDelimiter}</td>
+	</tr>
+
+
+</table>
+
+
+
+</body>
+</html>
