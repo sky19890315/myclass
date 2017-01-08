@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>提示信息页面</title>
+<script type="text/javascript">
+ var index = 5;
+ function changeTime(){
+	 document.getElementById("timeSpan").innerHTML = index;
+	 index--;
+	 if(index < 0){
+		 window.location="{$jumpUrl}";
+	 }else{
+		 window.setTimeout("changeTime()",1000);
+	 }
+	 
+	 
+	 
+	 
+ }
+
+
+
+
+</script>
+
+
+
+</head>
+<body onload="changeTime()">
+<center>	{$message}页面将在<span id="timeSpan">5</span>秒内跳转
+	如果没有跳转<a href="{$jumpUrl}"> 请点击这里</a>
+	</center>
+</body>
+</html>
